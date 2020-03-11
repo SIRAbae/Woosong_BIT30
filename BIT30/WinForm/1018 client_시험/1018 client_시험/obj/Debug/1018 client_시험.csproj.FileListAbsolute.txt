@@ -1,0 +1,9 @@
+D:\WinForm\1018 client_시험\1018 client_시험\obj\Debug\1018 client_시험.csprojAssemblyReference.cache
+D:\WinForm\1018 client_시험\1018 client_시험\obj\Debug\_1018_client_시험.Form1.resources
+D:\WinForm\1018 client_시험\1018 client_시험\obj\Debug\_1018_client_시험.Properties.Resources.resources
+D:\WinForm\1018 client_시험\1018 client_시험\obj\Debug\1018 client_시험.csproj.GenerateResource.cache
+D:\WinForm\1018 client_시험\1018 client_시험\bin\Debug\1018 client_시험.exe.config
+D:\WinForm\1018 client_시험\1018 client_시험\bin\Debug\1018 client_시험.exe
+D:\WinForm\1018 client_시험\1018 client_시험\bin\Debug\1018 client_시험.pdb
+D:\WinForm\1018 client_시험\1018 client_시험\obj\Debug\1018 client_시험.exe
+D:\WinForm\1018 client_시험\1018 client_시험\obj\Debug\1018 client_시험.pdb

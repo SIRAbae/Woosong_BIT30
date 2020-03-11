@@ -1,0 +1,11 @@
+D:\WinForm\1001오후과제\1001오후과제\bin\Debug\1001오후과제.exe.config
+D:\WinForm\1001오후과제\1001오후과제\bin\Debug\1001오후과제.exe
+D:\WinForm\1001오후과제\1001오후과제\bin\Debug\1001오후과제.pdb
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\1001오후과제.csprojAssemblyReference.cache
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\_1001오후과제.Form1.resources
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\_1001오후과제.Properties.Resources.resources
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\1001오후과제.csproj.GenerateResource.cache
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\1001오후과제.exe
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\1001오후과제.pdb
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\_1001오후과제.Form2_교수님그림판_.resources
+D:\WinForm\1001오후과제\1001오후과제\obj\Debug\_1001오후과제.Form3.resources

@@ -1,0 +1,11 @@
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\1004시험자판기콘솔.csprojAssemblyReference.cache
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\_1004시험자판기콘솔.Form1.resources
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\_1004시험자판기콘솔.Properties.Resources.resources
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\1004시험자판기콘솔.csproj.GenerateResource.cache
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\bin\Debug\1004시험자판기콘솔.exe.config
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\bin\Debug\1004시험자판기콘솔.exe
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\bin\Debug\1004시험자판기콘솔.pdb
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\1004시험자판기콘솔.exe
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\1004시험자판기콘솔.pdb
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\_1004시험자판기콘솔.InputMoney.resources
+D:\WinForm\1004시험자판기콘솔\1004시험자판기콘솔\obj\Debug\_1004시험자판기콘솔.SelectDrink.resources

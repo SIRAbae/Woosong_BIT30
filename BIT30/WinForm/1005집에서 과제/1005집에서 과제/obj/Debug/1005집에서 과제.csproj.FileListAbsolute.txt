@@ -1,0 +1,11 @@
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\1005집에서 과제.csprojAssemblyReference.cache
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\_1005집에서_과제.Properties.Resources.resources
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\1005집에서 과제.csproj.GenerateResource.cache
+D:\WinForm\1005집에서 과제\1005집에서 과제\bin\Debug\1005집에서 과제.exe.config
+D:\WinForm\1005집에서 과제\1005집에서 과제\bin\Debug\1005집에서 과제.exe
+D:\WinForm\1005집에서 과제\1005집에서 과제\bin\Debug\1005집에서 과제.pdb
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\1005집에서 과제.exe
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\1005집에서 과제.pdb
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\_1005집에서_과제.Form1.resources
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\_1005집에서_과제.Drinkselect.resources
+D:\WinForm\1005집에서 과제\1005집에서 과제\obj\Debug\_1005집에서_과제.Inputmoney.resources

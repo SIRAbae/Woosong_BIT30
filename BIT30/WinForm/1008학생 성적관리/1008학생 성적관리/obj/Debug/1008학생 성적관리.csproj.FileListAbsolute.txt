@@ -1,0 +1,9 @@
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\obj\Debug\1008학생 성적관리.csprojAssemblyReference.cache
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\obj\Debug\_1008학생_성적관리.Form1.resources
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\obj\Debug\_1008학생_성적관리.Properties.Resources.resources
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\obj\Debug\1008학생 성적관리.csproj.GenerateResource.cache
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\bin\Debug\1008학생 성적관리.exe.config
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\bin\Debug\1008학생 성적관리.exe
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\bin\Debug\1008학생 성적관리.pdb
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\obj\Debug\1008학생 성적관리.exe
+D:\WinForm\1008학생 성적관리\1008학생 성적관리\obj\Debug\1008학생 성적관리.pdb
