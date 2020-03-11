@@ -1,0 +1,31 @@
+﻿  handler.cpp
+C:\Users\USER\source\repos\0904project\0904project\handler.cpp(33,30): error C2664:  'void ui_SetAddress(HWND,TCHAR *,int)': 인수 2을(를) 'const char [13]'에서 'TCHAR *'(으)로 변환할 수 없습니다.
+  member.cpp
+  packet.cpp
+  start.cpp
+C:\Users\USER\source\repos\0904project\0904project\handler.cpp(33,22): message :  문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\USER\source\repos\0904project\0904project\handler.cpp(33,22): message : c1xx: fatal error C1083: 소스 파일을 열 수 없습니다. 'member.cpp': No such file or directory
+C:\Users\USER\source\repos\0904project\0904project\start.cpp(23,1): error C2664:  'INT_PTR DialogBoxParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': 인수 4을(를) 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)'에서 'DLGPROC'(으)로 변환할 수 없습니다.
+C:\Users\USER\source\repos\0904project\0904project\start.cpp(23,1): message :  대상 형식과 일치하는 범위에 이름이 같은 함수가 없습니다.
+C:\Users\USER\source\repos\0904project\0904project\start.cpp(18,1): error C4996:  'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  ui.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message :  'freopen' 선언을 참조하십시오.
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(25,26): error C2440:  '=': 'const char [3]'에서 'LPSTR'(으)로 변환할 수 없습니다.
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(25,16): message :  문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(30,26): error C2440:  '=': 'const char [3]'에서 'LPSTR'(으)로 변환할 수 없습니다.
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(30,16): message :  문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(35,30): error C2440:  '=': 'const char [5]'에서 'LPSTR'(으)로 변환할 수 없습니다.
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(35,16): message :  문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(40,30): error C2440:  '=': 'const char [5]'에서 'LPSTR'(으)로 변환할 수 없습니다.
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(40,16): message :  문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(45,36): error C2440:  '=': 'const char [9]'에서 'LPSTR'(으)로 변환할 수 없습니다.
+  wbclient.cpp
+C:\Users\USER\source\repos\0904project\0904project\ui.cpp(45,16): message :  문자열 리터럴로부터의 변환은 const 한정자가 손실됩니다(/Zc:strictStrings 참조).
+C:\Users\USER\source\repos\0904project\0904project\wbclient.cpp(52,20): warning C4244:  '=': 'uintptr_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\USER\source\repos\0904project\0904project\wbclient.cpp(53,23): warning C4312:  '형식 캐스트': 'unsigned int'에서 더 큰 'HANDLE'(으)로의 변환입니다.
+C:\Users\USER\source\repos\0904project\0904project\wbclient.cpp(55,9): warning C4244:  'return': 'SOCKET'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\USER\source\repos\0904project\0904project\wbclient.cpp(42,1): error C4996:  'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1831): message :  'inet_addr' 선언을 참조하십시오.
+C:\Users\USER\source\repos\0904project\0904project\wbclient.cpp(91,1): error C4996:  'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  코드를 생성하고 있습니다...
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\WinSock2.h(1849): message :  'inet_ntoa' 선언을 참조하십시오.
