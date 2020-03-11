@@ -1,0 +1,6 @@
+D:\WCF\1104저녁실습PictureService\1104저녁실습PictureService\bin\Debug\1104저녁실습PictureService.exe.config
+D:\WCF\1104저녁실습PictureService\1104저녁실습PictureService\bin\Debug\1104저녁실습PictureService.exe
+D:\WCF\1104저녁실습PictureService\1104저녁실습PictureService\bin\Debug\1104저녁실습PictureService.pdb
+D:\WCF\1104저녁실습PictureService\1104저녁실습PictureService\obj\Debug\1104저녁실습PictureService.csprojAssemblyReference.cache
+D:\WCF\1104저녁실습PictureService\1104저녁실습PictureService\obj\Debug\1104저녁실습PictureService.exe
+D:\WCF\1104저녁실습PictureService\1104저녁실습PictureService\obj\Debug\1104저녁실습PictureService.pdb

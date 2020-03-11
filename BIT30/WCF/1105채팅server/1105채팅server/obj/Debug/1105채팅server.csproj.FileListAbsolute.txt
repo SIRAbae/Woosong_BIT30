@@ -1,0 +1,14 @@
+D:\WCF\1105채팅server\1105채팅server\bin\Debug\1105채팅server.exe.config
+D:\WCF\1105채팅server\1105채팅server\bin\Debug\1105채팅server.exe
+D:\WCF\1105채팅server\1105채팅server\bin\Debug\1105채팅server.pdb
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server.csprojAssemblyReference.cache
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\MainWindow.g.cs
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\App.g.cs
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server_MarkupCompile.cache
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server_MarkupCompile.lref
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\MainWindow.baml
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server.g.resources
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\_1105채팅server.Properties.Resources.resources
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server.csproj.GenerateResource.cache
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server.exe
+D:\WCF\1105채팅server\1105채팅server\obj\Debug\1105채팅server.pdb

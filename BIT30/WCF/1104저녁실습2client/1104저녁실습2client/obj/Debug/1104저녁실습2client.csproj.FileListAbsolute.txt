@@ -1,0 +1,6 @@
+D:\WCF\1104저녁실습2client\1104저녁실습2client\bin\Debug\1104저녁실습2client.exe.config
+D:\WCF\1104저녁실습2client\1104저녁실습2client\bin\Debug\1104저녁실습2client.exe
+D:\WCF\1104저녁실습2client\1104저녁실습2client\bin\Debug\1104저녁실습2client.pdb
+D:\WCF\1104저녁실습2client\1104저녁실습2client\obj\Debug\1104저녁실습2client.csprojAssemblyReference.cache
+D:\WCF\1104저녁실습2client\1104저녁실습2client\obj\Debug\1104저녁실습2client.exe
+D:\WCF\1104저녁실습2client\1104저녁실습2client\obj\Debug\1104저녁실습2client.pdb
