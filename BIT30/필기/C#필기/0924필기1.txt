@@ -1,0 +1,51 @@
+===== 구조체=====
+c# 에서는 int나 bool형 등의 단순 형식들도 구조체이다.
+데이터는 기본적으로 은닉형이다. public을 써서 데이터를 공계해야 한다.
+
+사용자가 입력한 값을 기본형식으로 변환할때 사용하는 정적멤버 메서드인 Parse 와 TryParse입니다.
+Parse 와 TryParse 메서드는 사용하는 목적에 따라 입력 인자가 다르게 중복 정의 되어 있다.
+
+출력전용 매개변수(out)과 ref가 있다. 이것은 inparmeter과 outparameter의 개념이다. 
+
+     // ref : 원본 변경이 선택 부분
+     // out : 원본 변경이 강제적 부분
+***
+ret는 반드시 초기화를 해야 한다. 
+out은 초기화를 안해도 밖에서 강제적으로 바뀐다.
+***   --------> C#에서 기본적인 인자전달 방법
+
+TryParse ----> outparmeter
+Parse---------> inparameter
+
+
+=======부동 소수점======
+
+
+double d = 0.0; while (d != 1.0) 
+//무한 루프 - 0.1을 정확히 표현하지 못하기 때문에 1.0이 되지 못함
+ {     Console.WriteLine(d.ToString());     
+d = d + 0.1; } 
+===> 정확한 수치가 아닌 근사치기 때문에
+
+
+
+======= decimal ============
+
+decimal d = 0.0m; 
+while (d != 1.0m) 
+{     Console.WriteLine(d.ToString());
+     d = d + 0.1m; } 
+ 
+ decimal도 근사치를 표현하지만 10진수를 실수를 표현할 때 효과적으로 프로그래밍할 수 있다.
+하지만 매우 큰 숫자 형식이다.
+
+
+
+========= 열거형(enum) ======
+상수는 기본형과 열거형이 있다.
+열거형은 enum 키워드를 사용
+열거형은 기본적으로 정수(int)형식입니다.
+예) enum DialogResult { YES, NO, CANCEL, CONFIRM, OK }
+
+
+========캡슐화========

@@ -1,0 +1,16 @@
+Program
+
+    ↓
+	객체 생성
+    ↓
+
+App  -------> Wbprint<<static>>
+
+    ↓
+
+		Control
+
+    ↓                                     ↓                                   ↓
+
+
+Member <<data>>  WbArr<<container저장공간>>  Wblib<<static>>

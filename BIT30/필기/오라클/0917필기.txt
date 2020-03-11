@@ -1,0 +1,220 @@
+seif join은 자신의 테이블 조인
+equil join not equl join 을 이용해 여러 테이블을 조인
+외부 조인도 있다.(puter join)
+ansi join 표준sqr문장으로 조인 ex) sysdate는 오라클 문장이다. 다른 곳에서 사용 못한다.
+
+조인은 공통 분자를 찾아서 연결 방법은 많음
+조인문은 from절에 인자가 2개이상
+
+
+카디시안 곱은 조인할때 조건이 없으면 발생한다.
+
+모든 테이블은 구별할수 있는 칼럼이 있어야 한다.(주민번호, 학번)
+구별할수 있는 칼럼은 PK라고 하고 밑줄을 그어준다.
+테이블과 테이블의 관련을 맺어주는 칼럼을 FK(폴린키)라고 한다.
+PK는 2개가 존재할 수 없다 PK를 다른 테이블에서 사용하면 PK를 가진 테이블은 부모
+FK를 가진 테이블은 자식 테이블이다.
+
+조인을 거때 우리는 기준테이블이 무엇인지 질문 받게 된다. 
+출력되는 칼럼은 A테이블 * B테이블
+로우테이블의 갯수는 기준테이블의 갯수이다.
+
+select e.eno, e.ename, d.dname, dno
+from employee e join department d
+using(dno)
+where e.eno=7788; // 조건문 까지 넣은 형태
+
+
+<<기본 형태>>
+select 테이블이름.출력칼럼 , ........
+from 테이블A, 테이블B , .......
+where 조건문
+
+코드를 작성할 때 조건을 머저하고 조인을 하자 [ 상관은 없지만 효율이 좋다.]
+
+전
+select employee.eno, employee.ename, 
+           department.dname, employee.dno
+from employee, department 
+where employee.dno = department.dno
+and employee.eno=7788;
+
+후
+select e.eno, e.ename, d.dname, e.dno
+from employee e, department d
+where e.dno = d.dno
+and e.eno=7788;
+
+<<별칭사용 방법>>
+from 테이블이름[공백] 별칭
+
+JOIN의 3가지 방법
+<EQUL JOIN>
+SELECT table1.column, table2.column
+FROM table1, table2
+WHERE table1.column1 = table2.column2;
+
+<NATURAL  JOIN>
+SELECT table1.column, table2.column
+FROM table1 NATURAL JOIN table2;
+
+<USING JOIN>
+SELECT table1.column, table2.column
+FROM table1 JOIN table2
+USING(column);
+
+급여 등급 테이블(SALGRADE )
+GRADE [**PK**]
+LOSAL
+HISAL
+
+서로다른 테이블을 JOIN할때 EQUL JOIN은 힘들어서
+NON EQUL JOIN을 사용
+ex) select ename, salary, grade
+from employee, salgrade 
+where salary between losal and hisal;
+
+SELF JOIN
+select employees.ename as "사원이름", 
+           manager.ename as "직속상관이름"
+from employee employees, employee manager
+where employees.manager = manager.eno;
+
+기본형
+select 별칭1.출력칼럼1 , 별칭2.출력칼럼2
+from 테이블1.별칭1 , 테이블1.별칭2
+where 별칭1.인자1 = 별칭2.인자2
+-----------------> 상대 인자가 없으면 출력X
+
+
+OUTER JOIN
+SELECT table1.column, table2.column
+FROM table1, table2 
+WHERE table1.column(+) = table2.column;
+또는
+table1.column = table2.column(+)
+
+ex) select employees.ename || '의 직속 상관은 ' || manager.ename
+from employee employees join employee manager
+on employees.manager = manager.eno(+);
+
+=================================================================
+
+7. 서브 쿼리
+
+서브퀴리는 select, from, where 어디나 갈 수 있다.
+select 출력값에 서브쿼리의 값을 출력
+from 서브쿼리 값을 참고한다.
+where 서브쿼리 값을 가지고 조건을 만든다.
+
+단일 행 서브 쿼리   ==== 값이 1개 나옴
+단일 행 비교 연산자(>, =, >=, <, <>, <=)
+
+다중 행 서브 쿼리의 ==== 값이 2개 이상
+다중 행 비교 연산자(IN, ANY, SOM, ALL, EXISTS) 
+IN 은 연산자를 사용안한다. 
+ANY, SOM은 메인 쿼리의 연산자를 사용
+
+IN = EXIST
+==================================================================
+
+8.테이블 생성 수정 제거
+ 
+
+테이블 구조를 만드는 CREATE TABLE  문
+테이블 구조를 변경하는 ALTER TABLE 문
+테이블명 변경하는 RENAME문 
+테이블 구조를 제거하는 DROP TABLE 문
+테이블의 모든 데이터를 제거하는 TRUNCATE TABLE 문
+
+
+
+
+|		|		|
+|		|		|
+|	스키마	|	스키마	|
+|		|		|
+|_____________________|_____________________	|
+|		|		|
+|		|		|
+|	스키마	|	스키마	|
+|		|		|
+
+
+column_constraint_clause (이름, 타입, 제약조건)
+
+
+dno       number(2), 
+  이름       타입 (길이?)
+dname  varchar2(14),
+loc        varchar2(13)
+
+CREATE TABLE table [column [,column, …] ]
+AS subquery ;
+칼럼명을 대과로 안의 칼럼을로 지정을 해주는 데 생략이 가능하다. 
+만약 칼럼을 지정안했을 때 서브쿼리의 칼럼을 그대로 가져온다.
+ex) 
+
+ALTER TABLE dept20
+ DROP COLUMN  ename ;
+무결성을 지키기위해 사용한다.
+
+
+DROP TABLE 사용할 때 고유키(PK)를 다른 테이블에서 사용하고 있을때 
+사용되고 있는 FK를 먼저 지워야 PK를 지울수 있다.
+
+DDL문은 한번 실해하면 복구가 불가능 
+ex)파일삭재시 SHIFT누르고 완전 삭재
+
+=====================================================
+
+9. 데어터 조작과 트랜잭션
+
+테이블에 내용을 추가하는 INSERT 문
+테이블에 내용을 수정하는 UPDATE 문
+테이블에 내용을 삭제하는 DELETE 문
+
+
+INSERT INTO table_name (column_name, … ) // 전체를 집어넣으면 column_name을 생략 가능하다.
+  VALUES      
+11
+   (column_value, … ) ;
+
+문자타입
+char 지정형
+varchar2는 가변형
+
+날짜 타입은 date 반드시 ''를 함께 사용
+
+
+
+UPDATE 문 (WHERE문이 꼭 필요하다.)
+UPDATE table_name 
+  SET column_name1 = value1, column_name2 = value2, … 
+  WHERE conditions ;
+
+WHERE문이 없으면 모든 로우가 수정된다.
+
+DELETE와 UPDATE문은 비슷하다.
+
+트랜잭션 관리
+COMMIT 트랜잭션의 변경된 내용을 모두 영구 저장
+RPLLBACK은 트랜잭션의 변경사항을 취소한다./ 실행하게 되면 묶음 전으로 돌아간다.
+==============================================================
+
+10. 무결성과 재약조건이다.
+
+PRIMARY KEY는 NOT NULL+ UNIQUE 이다.
+
+UNIQUE는 NILL을 넣어 사용할 수 있다.
+
+
+
+
+CREATE TABLE customer(
+ id      VARCHAR2(20) constraint customer_id_uk unique, //제약 조건 명시 
+ pwd   VARCHAR2(20) constraint customer_pwd_nn NOT NULL,
+ name VARCHAR2(30) constraint customer_name_nn NOT NULL,
+ phone     VARCHAR2(30) ,
+ address  VARCHAR2(100)) ;
+ 

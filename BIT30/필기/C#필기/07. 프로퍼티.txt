@@ -1,0 +1,156 @@
+============ 프로퍼티 =========
+
+  [[[프로퍼티 선언 형식]]]
+
+class 클래스이름’
+{
+    데이터형식 필드이름;
+    접근한정자 데이터형식 프로퍼티이름
+    {
+        get
+        {
+            return 필드이름;
+        }
+    
+        set
+        {
+            필드이름 = value;
+        }
+    }
+}
+
+
+ [[[프로퍼티의 선언과 사용 예]]
+
+class MyClass
+{
+    private int myField;
+    public int MyField
+    {
+        get [데이터 받기, 초기화 필수]
+        {
+            return myField;
+        }
+        
+        set [데이터 입력, 데이터 입력]
+        {
+            myField = value;
+        }
+    }
+}
+                 |||
+                 |||   필드에 접근하듯 데이터에 접근
+                 |||
+                 ▼
+MyClass obj = new MyClass();
+obj.MyField = 3 ;
+Console.WriteLine( obj.MyField );
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*- 자동 구현 프로퍼티 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+C#은 자동 구현 프로퍼티를 제공함으로써 프로그래머가 의미없는 코드에 
+들이는 수고를 제거하도록 도움. 
+
+ [[[프로퍼티의 자동 구현 예]]
+ublic class NameCard
+{
+    private string name;
+    private string phoneNumber;
+ 
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+ 
+    public string PhoneNumber
+    {
+        get { return phoneNumber; }
+        set { phoneNumber = value; }
+    }
+}
+
+	|||
+    프로퍼티 자동 구현
+	|||
+	▼
+
+public class NameCard
+{
+    public string Name
+    {
+        get; set;
+    }
+ 
+    public string PhoneNumber
+    {
+        get; set;
+    }
+}
+
+
+=======프로퍼티와 생성자======================
+
+객체를 생성할 때 프로퍼티를 이용한 초기화 가능
+
+	[[[프로퍼티를 이용한 초기화]]]
+
+클래스이름 인스턴스 = new 클래스이름()
+    {
+        프로퍼티1 = 값, 
+        프로퍼티2 = 값,    <===값 뒤에는 " , "  <<**콤마이다.**
+        프로퍼티3 = 값
+    };
+
+[[예시]]
+BirthdayInfo birth = new BirthdayInfo()
+        {
+            Name = "서현",
+            Birthday = new DateTime(1991, 6, 28)
+        };
+
+
+======= 무명 형식 =========
+
+선언과 동시에 인스턴스를 할당하는 형식
+
+“1회용” 데이터 형식(Data Type)으로 사용하며,
+ 2번 이상 반복 사용할 데이터 형식이 필요한 경우에는 class나 struct를 
+선언하는 것이 나음
+
+var 키워드와 프로퍼티를 이용하여 선언함
+
+var myInstance = new { Name=”박상현”, Age=”17” };
+Console.WriteLine( myInstance.Name, myInstace.Age );
+
+========= 인터페이스의 프로퍼티 ==========
+프로퍼디나 인덱서를 가진 인터페이스를 상속하는 클래스는
+"반드시" 해당 프로퍼티와 인덱서를 구현해야함
+
+[[1]]
+interface IProduct
+{
+    string ProductName
+    {
+        get;
+        set;
+    }
+}
+
+---> 자동 구현 프로퍼티처럼 보이지만 인터페이스 안에 선언된 프로퍼티는 
+	“구현이 없는 상태”
+
+[[2]]
+ class Product : IProduct		class 
+{				
+    private string productName;	
+ 				
+    public string ProductName		
+    {				
+        get{ return productName; }	
+        set{ productName = value; }	
+    }				
+}				
+				
+---> 인터페이스를 상속하는 클래스는 인터페이스에 
+	선언되어 있는 프로퍼티는 반드시 구현해야 함
+

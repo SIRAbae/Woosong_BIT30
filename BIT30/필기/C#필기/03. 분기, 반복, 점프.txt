@@ -1,0 +1,85 @@
+=================== 분 기 문 ================
+if, else, else if
+if {
+	}
+else if{
+	} //세 갈래 이상일때 사용
+else{
+	}
+
+---switch----
+switch (조건식)
+{
+    case 상수1:
+        // 실행할 코드
+        break;
+    case 상수2:
+        // 실행할 코드
+        break;
+    default:
+        break;
+}
+
+=================== 반 복 문 ================
+C#은 다음 네 가지의 반복문을 제공 [ppt5 10번 슬라이드]
+	[[[[while]]]]
+while ( 조건식 )
+    반복실행할_코드
+
+	[[[[do while]]]]]
+do
+{
+    반복실행할_코드_블록
+}
+while( 조건식 )    ;
+
+	[[[[for]]]]
+for( 초기화식; 조건식; 반복식; )
+    반복실행할_코드;
+
+	[[[[[foreach (배열)]]]]
+int[] arr = new int[] {0, 1, 2, 3, 4}; // 배열 선언
+foreach (int a in arr)
+{
+    Console.WriteLine(a);
+}
+
+=================== 점 프 문 ================
+          [[[Break]]]
+int i = 0;  // i를 초기화하는 코드가 실행되고
+
+while ( i >= 0) // 반복이 실행되다가
+{
+    if ( i == 10 )
+        break;     // i가 10이 되면 while 문에서 탈출
+
+    Console.WriteLine( i++ );
+}
+
+// 프로그램의 실행 위치는 while 블록 다음으로 이동
+Console.WriteLine("Prison Break"); 
+
+          [[[continue]]]
+for ( int i=0; i<5; i++ )
+{
+    if ( i == 3 )
+        continue;
+    Console.WriteLine( i );
+}
+
+          [[[continue]]]
+goto 레이블;
+
+레이블 :
+    // 이어지는 코드
+-------- 사용 예제-------
+{
+    Console.WriteLine( " 1 " );
+    goto JUMP;
+    Console.WriteLine( " 2 " );
+    Console.WriteLine( " 3 " );
+
+JUMP:
+    Console.WriteLine( " 4" );
+}
+----- 출력 -->  1  4

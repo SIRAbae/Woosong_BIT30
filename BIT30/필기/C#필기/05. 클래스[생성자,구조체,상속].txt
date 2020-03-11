@@ -1,0 +1,459 @@
+==========기본지식=====
+메소드는 일련의 코드를 하나로 묶는것 (Class)
+클레스의 인스턴스(객체생성)는 객체생성이다.
+
+========= 생성자 ========
+
+class 클래스이름
+{
+    한정자(public)   클래스이름    ( 매개변수목록 )
+    {
+        //
+    }
+
+    // 필드
+    // 메소드(예 - public 클래스이름(초기화에 필요한 파라미터 [string 이름])
+}
+
+========= 소멸자 =========
+
+class 클래스이름
+{
+    ~클래스이름()
+    {
+        //
+    }
+
+    // 필드
+    // 메소드
+}
+
+((but)) 프로그래머가 명시적으로 소멸자를 선언하지 않아도 컴파일러가 암시적으로 
+	기본소멸자를 제공해줌
+
+========= 객체 복사하기: 얕은 복사와 깊은 복사  =========
+
+           <<<<얕은 복사>>>>
+
+class MyClass
+{
+    public int MyField1;
+    public int MyField2;
+}
+
+MyClass source = new MyClass();
+source.MyField1 = 10;
+source.MyField2 = 20;
+
+MyClass target = source;
+target.MyField2 = 30;
+
+Console.WriteLine( "{0} {1}", source.MyField1, source.MyField2 );
+Console.WriteLine( "{0} {1}", target.MyField1,   target.MyField2 );
+
+//아래의 코드에서 target은 source의 전체 필드 값을 복사하는 것이 
+	아닌, source가 참조하고 있는 힙의 주소만 복사해왔기 때문임
+
+                                                 |||
+                                                 |||
+                                                 ▽
+
+           <<<<깊은 복사>>>>
+
+class MyClass 
+{
+    public int MyField1;
+    public int MyField2;
+
+    public MyClass DeepCopy()
+    {
+        MyClass newCopy = new MyClass();
+        newCopy.MyField1 = this.MyField1;
+        newCopy.MyField2 = this.MyField2;
+        return newCopy;
+    }
+}
+// …
+
+MyClass source = new MyClass();
+source.MyField1 = 10;
+source.MyField2 = 20;
+
+MyClass target = source;.DeepCopy();
+
+//깊은 복사를 위해서는 명시적으로 필드를 복사하는 코드가 필요
+
+
+============================THIS 키워드 ====================
+
+ * 객체가 스스로를 가리키는 키워드
+
+ * 객체 외부에서 객체의 필드나 메소드에 접근하기 위해 
+	객체의 이름(변수 또는 식별자)를 사용하듯, 객체 내부에서는 
+	자신의 필드나 메소드에 접근할 때 this 키워드 사용
+
+class Employee
+{
+    private string Name1;
+
+    public void SetName( string Name2 )
+    {
+        this.Name2 = Name1;
+    }
+}
+
+
+This() 생성자
+	자기 자신의 생성자를 나타냄
+	this() 생성자는 다른 코드에서는 사용불가하며, 오로지 생성자에서만 사용 가능
+
+class MyClass
+{
+    int a, b, c;
+    public MyClass1()
+    {
+        this.a = 5425;
+    }
+    public MyClass2(int b) : this()  <----- MyClass1
+    {
+        this.b = b;
+    }
+    public MyClass(int b, int c) : this( b )  <----- MyClass2
+    {
+        this.c = c;
+    }
+}
+
+
+======================은닉성(Encapsulation) ====================
+최소한의 기능만을 노출하고 내부는 모두 감추는 것
+상속성(Inheritance)과 다형성(Polymorphism)과 함께 OOP의 3대 특성
+대체로 필드는 모두 감추고 메소드는 꼭 노출이 필요한 것만 공개
+
+ppt07 16슬라이드 참고
+
+class MyClass
+{
+    private int MyField_1;       <------데이터 공개 (내외부에서 접근가능)
+    protected int MyField_2;   <------데이터 은닉 (내부에서 접근가능, 외부에서 접근불가능)
+}
+
+====================== 상속 ====================
+한 클래스(자식 클래스)가 다른 클래스(부모 클래스)로부터 필드, 메소드, 프로퍼티 등을 물려 받는 것.
+자식 클래스는 파생 클래스, 부모 클래스는 기반 클래스라고도 함
+
+[[[[기본형]]]]
+class 기반 클래스
+{
+    // 멤버 선언
+}
+
+class 파생 클래스 : 기반 클래스
+{
+    // 아무 멤버를 선언하지 않아도     // 기반 클래스의 모든 것을 물려받아 갖게 됩니다.
+    // 단, private으로 선언된 멤버는 제외입니다.
+}
+
+[[[[예제]]]]
+class Base
+{
+    public void BaseMethod()
+    {
+        Console.WriteLine( "BaseMethod" )
+    };
+}
+
+class Derived : Base  // 상속받은 자식 클래스(파생 클래스)
+{
+}
+
+
+********** base 키워드 ********
+this 키워드가 자기 자신을 가리키듯, base 키워드는 부모(기반) 클래스를 가리킴
+
+[[[[예제]]]]
+class Base
+{
+    protected string Name;
+    public Base(string Name)
+    {     this.Name = Name;
+    }
+}
+ 
+class Derived : Base
+{
+    public Derived(string Name) : base(Name)
+    {
+        Console.WriteLine("{0}.Derived()", this.Name);
+    }
+}
+
+********** 기반 클래스와 파생 클래스[ IS 와 AS ] 질문  ********
+**기반 클래스와 파생 클래스 사이에서는 족보를 오르내리는 형식 변환이 가능
+**자식 클래스의 객체는 부모 클래스의 객체로 간주할 수 있음
+	즉, 파생(자식) 클래스의 인스턴스는 기반(부모) 클래스의 인스턴스로써도 사용 
+
+[[[부모]]]
+class Mammal
+{
+    public void Nurse() { … }
+}
+ 
+class Dog : Mammal
+{
+    public void Bark() { … }
+}
+ 
+class Cat : Mammal
+{
+    public void Meow() { … }
+}
+
+[[[자식]]]
+Mammal mammal = new Mammal();
+mammal.Nurse();
+ 
+mammal = new Dog();
+mammal.Nurse();
+ 
+Dog dog = (Dog)mammal;
+dog.Nurse();
+dog.Bark();
+ 
+mammal = new Cat();
+mammal.Nurse();
+ 
+Cat cat = (Dog)mammal;
+cat.Nurse();
+cat.Meow();
+
+
+<<Is>> 객체가 해당 형식에 해당하는지를 검사하여 그 결과를 bool 값으로 반환합니다.
+
+<<As>> 형식 변환 연산자와 같은 역할을 합니다. 다만 형변환 연산자가 변환에 실패하는 경우 
+	예외를 던지는 반면에 as 연산자는 객체 참조를 null로 만든다는 것이 다릅니다.
+
+
+************************** 오버라이딩과 다형성   ***********************
+<<다형성(Polymorphism)>>
+
+*OOP에서 다형성은 객체가 여러 형태를 가질 수 있음을 의미
+*자신으로부터 상속받아 만들어진 파생 클래스를 통해 다형성을 실현
+*다형성은 메소드 오버라이딩(Overriding)을 통해서 실현
+
+<<오버라이딩(Overriding)>>
+
+*부모 클래스에서 선언된 메소드를 자식 클래스에서 재정의 하는 것
+*어떤 메소드가 오버라이딩이 가능하려면 부모 클래스에서 미리 virtual 한정자로 선언되어 있어야 함
+*자식 클래스는 부모 클래스에서 virtual로 선언되어 있는 메소드를 override 한정자를 이용하여 재선언(재정의)
+
+<<<부모>>>
+class ArmorSuite
+{
+    public virtual void Initialize()
+    {
+        Console.WriteLine("Armored");
+    }
+}
+
+<<<자식>>>
+class IronMan : ArmorSuite
+{
+    public override void Initialize()
+    {
+        base.Initialize();
+        Console.WriteLine("Repulsor Rays Armed");
+    }
+}
+ 
+class WarMachine : ArmorSuite
+{
+    public override void Initialize()
+    {
+        base.Initialize();
+        Console.WriteLine("Double-Barrel Cannons Armed");
+        Console.WriteLine("Micro-Rocket Launcher Armed");
+    }
+}
+==============
+----->>>ArmorSuite 클래스는 IronMan, WarMachine등  다양한 모습으로 파생
+
+
+
+=======================메소드 숨기기========================
+*오버라이딩을 하기 위해서는 기반 클래스가 단단하게 설계되고 구현되어야 함.
+   -->파생클래스에서 override로 재정의 하려면 기반 클래스의 메소드가 virtual로 선언되어 있어야 함
+
+*메소드 숨기기는 기반 클래스의 메소드가 virtual로 선언되어 있지 않았을 때 이를 재정의할 수는 없지만 감추고 같은 이름으로 새 메소드를 선언하도록 하는 기능
+
+*오버라이딩의 경우에는 파생 클래스의 객체를 기반 클래스로 형변환해도 파생클래스 버전의 메소드가 호출되지만,  
+	메소드 숨기기의 경우에는 같은 상황에서 기반 클래스의 메소드가 호출됨
+
+*new 한정자를 이용(객체를 할당할 때 사용하는 new 연산자가 아님)
+
+class Base(부모)
+{
+    public void MyMethod()     <--------부모클래스에서 메소드를 virtual로 선언하지 않음
+    {
+        Console.WriteLine("Base.MyMethod()");
+    } 
+}
+ 
+class Derived : Base(자식)
+{
+    public new void MyMethod()   <---------------------자식 클래스에서 new 한정자를 이용하여 재선언함으로써 기반(부모) 클래스 버전의 메소드를 숨김
+    {
+        Console.WriteLine("Derived.MyMethod()");
+    }
+}
+
+
+======================= 오버 라이딩봉인하기 ========================
+
+			[[[[[sealed 한정자를 이용하여 메소드를 선언하면 파생클래스에서는 해당 메소드를 오버라이딩할 수 없음]]]]]
+
+class Base
+{
+    public virtual void SealMe()
+    {
+        // …
+    }
+}
+ 
+class Derived : Base
+{
+    public sealed void SealMe() //sealed <<-----------sealed로 메소드를 선언하면 이 클래스를 상속하는 클래스(부모[Base])에서는 SealMe() 메소드를 오버라이딩할 수 없음
+
+    {
+        // …
+    }
+}
+
+======================= 중첩 클래스 ========================
+
+중첩 클래스는 클래스 안에 선언된 클래스를 말함
+
+[[중첩 클래스 예제]]
+class OuterClass
+{
+    private int OuterMember;
+    
+    class NestedClass
+    {
+        public void DoSomething()
+        {
+            OuterClass outer = new OuterClass();
+            outer.OuterMember = 10;         
+        }
+    }
+}
+
+======================= 분할 클래스 ========================
+
+분할 클래스(Partial Class)란, 여러 번에 나눠서 구현하는 클래스
+
+[[예제]]
+MyClass obj = new MyClass();
+ 
+obj.Method1( );
+obj.Method2( );
+obj.Method3( );
+obj.Method4( );
+ 
+partial class MyClass
+{
+    public void Method1( ) { }
+    public void Method2( ) { } 
+}
+ 
+partial class MyClass
+{
+    public void Method3( ) { }
+    public void Method4( ) { }
+}
+
+======================= 확장 메소드 ========================
+
+기존 클래스의 기능을 확장하는 기법
+기반 클래스를 물려받아 파생 클래스를 만든 뒤 여기에 필드나 메소드를 추가하는 상속과는 다름
+확장 메소드를 이용하면 string 클래스에 문자열을 뒤집는 기능을 넣을 수도 있고, int 형식에 제곱 연산 기능을 넣을 수도 있음
+
+[[기본형]]
+namespace 네임스페이스이름
+{     public static class 클래스이름
+    {
+        public static 반환형식 메소드이름( this 대상형식 식별자, 매개_변수_목록 )
+        {                                                  ↑확장하고자 하는 클래스 또는 형식
+            //
+        }
+    }
+}
+
+[[예제]]
+namespace MyExtension
+{
+    public static class IntegerExtension
+    {
+        public static int Power(this int myInt, int exponent)
+        {
+            int result = myInt;
+            for (int i = 1; i < exponent; i++)
+                result = result * myInt;
+			||
+            return result;	||
+        } 			||
+    } 			||		
+}			||
+		             ▼
+
+		using MyExtension;   <------------------ 확장 메소드를 담는 클래스의
+ 						네임스페이스를 사용합니다.
+		// …
+		int a = 2; 
+		Console.WriteLine( a.Power( 3 ) );     <----- 마치 Power()가 원래부터 int형식의 
+		Console.WriteLine( 10.Power(4) );	메소드였던것 처럼 사용할수 있습니다.
+
+
+
+======================= 구 조 체 =============================
+
+구조체는 클래스하고는 사촌지간으로, 필드와 메소드를 가질 수 있는 등 상당 부분 비슷함
+
+
+		     클래스 				구조체
+-----------|-----------------------------------------------	| ----------------------------------------------------
+  키워드  |                     class                        	|		struct
+-----------|-----------------------------------------------	| ----------------------------------------------------
+  형식     |                  참조형식                    	|		값 형식
+-----------|-----------------------------------------------	|----------------------------------------------------
+  복사     |          얕은 복사(Shallow Copy)           	|	깊은 복사(Deep Copy)
+-----------|-----------------------------------------------	| ----------------------------------------------------
+인스턴스 |          new연산자와 생성자 필요           	|	        선언만으로도 생성
+  생성     |                                                   	|
+-----------|-----------------------------------------------	| ----------------------------------------------------
+ 생성자   |     매개변수 없는 생성자 선언 가능      	|          매개 변수 없는 생성자 선언 불가능
+-----------|----------------------------------------------	| ----------------------------------------------------
+  상속     |                    가능                          	|       모든 구조체는 System.Object 형식을 
+             |				|        상속하는 System.ValueType으로부터 
+             |				|	           직접 상속받음.
+__________|___________________________________________|______________________________________________
+
+[[예제]]
+struct MyStruct
+{
+    public int MyField1
+    public int MyFiled2
+ 
+    public void MyMethod()
+    {
+        // …
+    }
+}
+-------
+MyStruct s;
+s.MyField1 = 1; 
+s.MyField2 = 2;
+                             <=====s의 MyField1은 3, MyField2는 2이지만,
+MyStruct t;		t의 MyField1은 1, MyField2는 2입니다.	
+t = s; 
+s.MyField1 = 3;  

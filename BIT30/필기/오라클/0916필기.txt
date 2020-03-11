@@ -1,0 +1,177 @@
+0903 server
+client 모듈코드 
+
+
+1. 이전에 만들었던 wbclient.cpp/h 를 프로젝트에 포함
+   컴파일오류 발생
+   main함수에 2개의 전역 함수 필요.......
+2. handler에 2개의 함수를 정의(복사)
+
+    void logmessage(int flag, const char*msg)
+    void recvmessage(char *msg, int size)
+
+3. 초기화과정 (intDialog)
+   소켓 라이브러리 초기화 함수 호출
+   서버 접속 함수를 호출
+
+4.  종료처리(OnClose)
+    소켓 클로우즈 함수 호출
+
+
+5. 수신데이터를 에디트에 출력
+   void recvmessage(char *msg, int size)
+  msg에 전달된 문자열을 ui에 전달하여 에디트에 출력
+
+
+DBMS
+데이터관리소프트웨어
+datamanagementsoft
+
+SQL
+DBMS명령어
+
+
+기본
+scott
+tiger
+
+//관리자(system,sys)패스워드 변경
+sqlplus "/as sysdba"
+alter user system identified by 1234;
+alter user sys idenstified by 1234;
+
+[언락]
+system
+1234 접속후  
+alter user scott identified by tiger account unlock
+
+//접속 명령어
+conn scott/ tiger
+
+접속 오류 발생시 작업관리자에서 서비스 oracle  실행(자동)으로 설정
+
+desc dept--테이블의 스키마 정보 확인
+//emp,
+[출력]
+ 이름                                             널?              유형
+ ----------------------------------------- -------- ----------------------------
+ DEPTNO                                       NOT NULL    NUMBER(2)
+ DNAME                                                        VARCHAR2(14)
+ LOC                                              	       VARCHAR2(13)
+ 
+오라클에서 사용하는 문자는 3개(숫자[정수,실수],날짜,문자)
+오라클에서 NULL은 그냥 없다의 뜻 (무결성)
+DEPTNO은 값이 있어야 한다. 나머지는 값이 없어도 된다.
+
+SQL> desc emp;
+ 이름                                               널?      유형
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL   NUMBER(4)
+ ENAME                                                     VARCHAR2(10)
+ JOB                                          	               VARCHAR2(9)
+ MGR                                                        NUMBER(4)
+ HIREDATE                                                     DATE
+ SAL                                                         NUMBER(7,2)
+ COMM                                                     NUMBER(7,2)
+ DEPTNO                                             	   NUMBER(2)
+
+DATA는 날짜이다.
+
+==========================
+TCL : Transaction  Control Language 
+//COMMIT(트랜잭션의 정상적인 종료처리
+ROLLBACK(트랜잭션 취소)
+SAVEPOINT(트랜잭션내에 임시 저장점 설정)
+
+
+
+ppt2
+글자는 대소문자를 구별해야 한다.
+날자와 상수는 문자와 같이 작은 따옴표로 묶어야 한다.
+
+논리 연산자는 AND, OR, NOT이 있다. 
+범위를 지정할때
+where salary between 1000and 1500;
+
+IN연산자(비교 연산자)
+select *
+from employee
+where commission in(300,500,1400); 
+employee에서 commission이 300,500,1400인 사람을 출려
+
+LIKE와 와일드 카드
+% 문자가 없거나 하나이상의 문자가 어떤 값이 와도 상관 없다.
+_ 하나의 문자가 어떤 값이 와도 상관없다.
+
+IS NULL 과 NOT NULL
+23page
+
+정렬을 위한 ORDER BY 절
+오름차순(ascending)
+내림차순(descending)
+
+ppt4
+오라클은 함수가 적용된다.
+타입은 문자, 숫자, 날짜, 변환, 일반 함수가 있다.
+왜우지 말고 보고 써라
+
+문자처리 함수
+ LOWER 소문자로 변환한다.
+ UPPER 대문자로 변환한다.
+ INITCAP 첫 글자만 대문자로 나머지 글자는 소문자로 변환한다.
+   길이변환 
+ LENGTH 문자의 길이를 반환한다.(한글 1Byte)
+ LENGTHB 문자의 길이를 반환한다.(한글 2Byte)
+ 다음에도 문자조작 반올림등 많다. 그냥 ppt4보고 써라
+ 중략
+
+듀얼 select 2+3
+  2  from emp;
+
+**개인적으로 형 변환 함수는 중요하다.
+
+ppt 5 
+그룹합수
+그룹 GROUP BY
+그룹 조건(제한) HAVING 절
+
+
+
+     EMPNO ENAME      JOB              MGR HIREDATE        SAL       COMM
+---------- ---------- --------- ---------- -------- ---------- ----------
+    DEPTNO
+----------
+   7369 SMITH      CLERK           7902 80/12/17        800
+        20
+    DEPTNO DNAME          LOC
+---------- -------------- -------------
+select * from emp;
+
+
+select deptno, ename, hiredate, SYSDATE, round(sysdate - hiredate) as "근무일수", round((sysdate - hiredate)/12,0) as "근무년수", round((sysdate - hiredate)/30)  as "근무월수", round((sysdate - hiredate)/7) as "근무주" from emp;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

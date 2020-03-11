@@ -1,0 +1,232 @@
+<<DDL>>
+=====================================
+-CREATE TABLE(생성 테이블)
+
+CREATE TABLE CHARCTERS
+(
+CH_ID 		NUMBER(5) CONSTRAINT CH_ID_PK PRIMARY KEY,
+CH_NAME 	VARCHAR2(30),
+MASTER_ID	NUMBER(5),
+ROLE_ID 		NUMBER(5),
+EMAIL 		VARCHAR2(40)
+);  					<< 테이블 생성 예시
+=====================================
+테이블 복사
+
+CREATE TABLE '테이블명' AS
+SELECT *
+FROM '복사할 테이블'
+
+=====================================
+
+ALTER TABLE
+
+기본 : ALTER TABLE "테이블명" +a
+
+ADD CONSTRAINT '인덱스명' PRIMARY KEY '칼럼명' 	<<제약조건추가
+
+ADD ('추가할 칼럼명' '데이터 타입') 		<< 칼럼 추가
+
+MODIFY '변경할 칼럼명' '데이터타입'		<< 칼럼 크기 변경
+
+DROP COLUMN '삭제할 칼럼명' 			<< 칼럼 삭제
+
+SET UNUSED (칼럼명) 			<< 칼럼 미사용 처리
+
+DROP UNUSED COLUMNS 			<< 미사용 칼럼 삭제
+
+=====================================
+
+-RENAME
+
+RENAME '기존 데이터명'  TO  '바꿀 데이터명' 		<<테이블명 변경
+
+RENAME COLUMN '기존 데이터명' TO '바꾼 데이터명'	 <<칼럼명 변경
+
+=====================================
+
+-DROP TABLE(모든 데이터 제거)
+
+DROP TABLE '테이블명' 			<<테이블 제거
+
+=====================================
+
+-TRUNCATE TABLE(테이블의 모든 로우 제거)
+
+TRUNCATE TABLE '테이블명'
+
+=====================================
+
+-데이터 사전 사용
+
+USER_SEQUENCES / USER INDEXES / USER_VIEW
+사용자가 소유한 	시퀀스 / 인덱스 / 뷰 		정보 
+
+SELECT '테이블명'
+FROM '인덱스 함수'
+WHERE TABLE_NAME = '테이블 명'
+
+ex))star_wars에서 사용한 인덱스의 정보 조회
+SELECT *
+FROM USER_INDEXES
+WHERE TABLE_NAME = 'STAR_WARS';
+
+=====================================
+
+<<DML>>
+
+=====================================
+INSERT
+
+INSERT INTO '테이블명'[칼럼명, 칼럼명, 칼럼명]
+VALUES	('넣을 값', '넣을 값', '넣을 값')
+
+** 칼럼 명의 타입형태와 넣을 값의 타입형태는 동일해야 함**
+** 테이블명 뒤에 타입형을 안 쓰면 모든 칼럼명 참조**
+
+-서브쿼리로 행 복사-
+INSERT INTO TABLE (칼럼명, 칼럼명,...)
+SELECT *
+FROM '참조할 쿼리'
+=====================================
+UPDATE
+
+UPDATE '테이블명'
+SET '칼럼명' = '바꿀 데이터 정보'
+[WHERE '칼럼명' = '데이터 정보'] 		<< 수정할 칼럼의 조건
+=====================================
+DELETE
+
+DELETE '테이블명' 			<<테이블에서 행 데이터 제거
+[WHERE '칼럼명' = '데이터정보']
+
+EX))
+DELETE dept
+WHERE deptno = 10;
+
+<<서브쿼리 사용한 DELETE>>
+DELETE '테이블명'
+WHERE '칼럼명' = (SELECT '칼럼명' FROM '칼럼명을 소유한 테이블명'
+		WHERE '참조할 칼럼명' = '데이터정보'); 
+
+EX) SALES 부서에 근무하는 사원 전체 삭제
+DELETE emp_cpy
+WHERE deptno = (SELECT deptno FROM dept
+		WHERE dname = 'SALES');
+=====================================
+COMMIT
+
+COMMIT;  	(영구 저장)		<<단독 사용
+ROLLBACK;	(이전으로 복구)	<<단독 사용
+
+=====================================
+
+<<제약 조건>>
+
+NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK, DEFAULT 등의 제약 조건이 있다.
+NULL          = 데이터 없음
+
+UNIQUE        = 데이터 유일 식별을 위한 제약조건 / 한 개 이상의 칼럼도 UNIQUE로 만들 수 있음.
+ (중복 가능하단 뜻)
+PRIMARY KEY   = 데이터 식별을 위한 제약조건
+
+UNIQUE + NOT NULL 속성을 가짐 / 칼럼 내 단 한개만 생성 가능
+
+FOREIGN KEY   = 데이터 참조를 위한 제약조건 / 보통 자식 테이블에 참조용으로 사용한다. 관계형 데이터베이스
+    + 외래 키 제약사항 : 생성 전 부모 테이블이 먼저 생성되어 있어야 한다. 
+
+CHECK         = 조건을 체크하여 해당되는 값만 입력할 수 있는 제약조건
+    + 사용법 : GENDER VARCHAR2(10) NOT NULL,
+                  CONSTRAINT CHECK_GENDER CHECK(ENDER IN ('남성', '여성')
+
+DEFAULT = 그냥 디폴트 값..
+
+=====================================
+--테이블 생성문 내부--
+CREATE TABLE customer(
+ id      VARCHAR2(20) constraint '인덱스명' '제약조건 타입'
+ pwd   VARCHAR2(20) constraint customer_pwd_nn NOT NULL, ((예시
+ name VARCHAR2(30) constraint customer_name_nn NOT NULL, ((예시 not null
+ phone     VARCHAR2(30) ,
+ address  VARCHAR2(100)) ;
+======================================
+--테이블 생성문 맨 끝--
+CONSTRAINT '  인  덱  스  명 '  PRIMARY KEY ('설정할 칼럼명);
+CONSTRAINT CASTING_PK PRIMARY KEY (EPISODE_ID);               
+
+--외부--
+ALTER TABLE CHARACTERS
+ADD CONSTRAINT CH_ROLE_ID_FK FOREIGN KEY(ROLE_ID)
+              REFERENCES ROLES (ROLE_ID);
+
+ (데이터 무결성 제약 설정(FOREIGN KEY)
+
+<<설명>>
+ADD CONSTRAINT “제약별칭” “제약타입” (제약할 칼럼) 
+	REFERENCES “PK가진 테이블” (“PK칼럼”);
+
+(FK 제외한 문)
+ALTER TABLE CHARACTERS
+ADD CONSTRAINT CH_ROLE_ID_PK PRIMARY KEY(ROLE_ID)
+
+**단, NULL 및 NOT NULL 문은 외부에서 추가할 수 없다**
+======================================
+
+<<인덱스>>
+
+======================================
+CREATE ['제약조건 타입'] INDEX '인덱스명'
+
+EX)) 
+CREATE UNIQUE INDEX CHARACTER_IX_01 ON CHARACTERS(CHARACTER_NAME)
+CREATE '제약조건' INDEX '인       덱       스      명  ' ON     '테 이 블 명 '   ( '인덱스 들어간 칼럼명'  )
+
+
+DROP INDEX '인덱스명' 			<<인덱스 제거
+**자식 테이블에서 참조하고 있는 인덱스는 삭제가 안되니 주의!**
+
+SELECT *
+FROM USER_INDEXES
+WHERE TABLE_NAME = 'STAR_WARS';  		<<생성된 인덱스 확인
+
+SELECT *
+FROM USER_IND_COLUMNS
+WHERE INDEX_NAME = 'CH_ID_PK'; 		<<인덱스에 해당하는 칼럼 확인
+======================================
+
+<<시퀀스>>
+값을 자동으로 증가시키는 개념
+for(int i = 2, i < 9999999, i++) 같은느낌?
+======================================
+
+CREATE SEQUENCE '생성할 시퀀스명'
+MINVALUE 2		<<시퀀스 시작값
+MAXVALUE 9999999	<<시퀀스 최댓값
+INCREMENT BY 1		<<증가되는 값
+START WITH 2		<<시작되는 값
+NOCACHE		<<미리 값을 할당한다
+NOORDER		<<요청되는 순서대로 값 생성
+NOCYCLE; 		<<최대치 다다르면 초기값부터 다시 시작?
+			
+▲ASDF_SEQ 라는 시퀀스  생성 예시
+
+======================================
+
+CREATE TABLE ASDF
+(
+NUMBER_MOVE   NUMBER(15)  NOT NULL
+);
+
+INSERT INTO ASDF(NUMBER_MOVE)
+SELECT ASDF_SEQ.NEXTVAL 
+FROM CHARACTERS;			<<시퀀스 사용 예시
+
+======================================
+
+SELECT SEQUENCE_NAME, MIN_VALUE, MAX_VALUE, INCREMENT_BY, CYCLE_FLAG
+FROM USER_SEQUENCES;  			<<현재 생성된 시퀀스 확인
+
+======================================
+
+DROP SEQUENCE '시퀀스명'			<<시퀀스 삭제
+

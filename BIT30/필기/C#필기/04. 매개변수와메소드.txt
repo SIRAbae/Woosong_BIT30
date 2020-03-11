@@ -1,0 +1,158 @@
+===============메소드================
+메소드란 일련의 코드를 하나의 이름 아래 묶는 것 ( Class )
+
+메소드 선언
+class 클래스의_이름
+{
+    한정자 반환_형식 메소드의_이름( 매개_변수_목록 )
+    {
+        // 실행하고자 하는 코드 1
+        // …
+        // 실행하고자 하는 코드 n
+        return 메소드의_결과;
+    }
+}
+
+메소드 호출
+int 이름 =  클래스이름.메소드이름(값1,값2);
+
+예시}--------------------------------------------------
+메소드 선언
+class Calculator
+{
+   	 public static int Plus( int a, int b )
+   	 {
+		Console.WriteLine(“Input : {0}, {1}”, a, b);
+     		int result = a + b;
+        		return result;
+    }
+}
+
+메소드 호출
+int x = Calculator.Plus( 3, 4 ); //x는 7
+int y = Calculator.Plus( 5, 6 ); //y는 11
+
+=============리턴(return)===============
+점프문의 한 종류
+return; 그냥 호출자에게 돌림
+return (인자or 식); 인자를 호출자에게 돌림(종료) or 식을 계산해서 호출자에게 돌림(종료)
+
+
+============= 매개 변수 ========================
+메소드를 호출할 때 넘기는 매개 변수는 그대로 메소드안으로 넘겨지지 않는다.
+이름만 같은 서로다른 매개변수이다.
+ppt 6 9번 슬라이드
+
+-------Swap()---------------
+두 매개변수의 값을 교환하는 Swap()문
+
+******사용 방법 [메소드 선언과 호출 시 ref 키워드를 이용]****************
+static void Swap( ref int a, ref int b)
+{
+    int temp = b;
+    b = a;
+    a = temp;
+}
+
+static void Main(string[] args)
+{
+    int x = 3;
+    int y = 4;
+
+   Swap( ref x, ref y);
+
+}
+
+ x = 3 //// Y = 4  ====> x = 4 //// Y = 3
+
+-----------출력 전용 매개 변수( out ) ------------
+
+
+void Divide( int a, int b, out int quotient, out int remainder )
+{
+    quotient = a / b;
+    remainder = a % b;
+}
+
+static void Main(string[] args)
+{
+int a = 20;
+int b = 3;
+int c;
+int d;
+
+Divide( a, b, out c, out d );
+Console.WriteLine("Quotient : {0}, Remainder {1}", c, d );
+}
+
+     // ref : 원본 변경이 선택 부분
+     // out : 원본 변경이 강제적 부분
+
+
+================메소드 오버로딩=================
+메소드 오버로딩 : 하나의 메소드 이름에 여러 개의 구현을 올림
+int Plus(int a, int b)
+{
+    return a + b;
+}
+
+double Plus(double a, double b)
+{
+    return a + b;
+}
+
+int result1 = Plus( 1, 2 ); ------> int Plus 메소드 사용
+
+
+double result2 = Plus( 3.1, 2.4 );------>double Plus 메소드 사용
+
+================가변 길이 매개 변수 ==================
+가변길이 매개변수는 params 키워드와 배열을 이용하여 선언
+
+int Sum( params int[] args )
+{
+    int sum = 0;
+    for(int i=0; i<args.Length; i++)
+    {
+        sum += args[i];
+    }
+    return sum;
+}
+
+========== 매소드 오버로딩 + 가변 길이 매개변수 ===============
+(메소드 오버로딩)
+메소드 오버로딩은 매개변수의 개수가 유한하게 정해져 있을때
+(매개변수의 개수가 2개면 메소드 매개변수 개수도 2개)
+매개변수의 각 형식이 다를 때 사용
+
+(가변길이 매개 변수)
+가변길이 매개 변수 형식은 같으나 매개 변수의 개수만 유연하게 달라질 수 있는 경우에 사용
+
+======================명명된 매개 변수========================
+명명된 매개 변수(Named Parameter)는 메소드를 호출할 때 매개 변수의 이름을 명시함으로써 
+순서에 관계없이 매개변수에 할당할 데이터를 바인드하는 기능
+
+예))
+static void PrintProfile( string name,  string phone)
+{
+    Console.WriteLine("Name:{0}, Phone:{1}", name, phone====~~
+~===> index 0에 name 값 , index 1에 phone값 ); 
+------> 뒤에 순서를 바꿀수 있다.
+
+static void Main(string[] args)
+{
+    PrintProfile( name : "박찬호", phone : "010-123-1234");
+}
+
+======================선택적 매개 변수========================
+선택적 매개 변수는 메소드 선언시 매개 변수에 기본 값을 할당함으로 써, 해당 매개변수에 명시적으로 
+값을 할당할지/않을지를 선택가능하게 하는 기능
+
+예))  매개변수 a와 b의 값을 0으로 기본 할당했다.
+void MyMethod( int a = 0, int b = 0 )  ----> b는 선택적 매개변수
+{
+    Console.WriteLine( “{0}, {1}”, a, b );
+}
+
+MyMethod(3);     // 매개변수 b 생략
+MyMethod(3, 4);  

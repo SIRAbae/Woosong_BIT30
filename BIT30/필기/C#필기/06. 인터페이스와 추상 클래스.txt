@@ -1,0 +1,123 @@
+====================== 인터페이스 ===========================
+
+----------------[[ 기 본 형 ]]---------------------------
+
+interface 인터페이스이름
+{
+    반환형식 메소드이름1( 매개변수 목록 );
+    반환형식 메소드이름2( 매개변수 목록 );
+    반환형식 메소드이름3( 매개변수 목록 );
+    // …
+}
+
+-----------[[ 예 제 : 인터페이스 응용 ]]---------------
+[[[1]]]
+class ClimateMonitor
+{
+  *인터페이스*--> private ILogger logger;
+    	public ClimateMonitor(ILogger logger) <----- [[[3]]]- ClimateMonitor monitor 
+					ClimateMonitor(new FileLogger("MyLog.txt"));
+    {
+        this.logger = logger;
+    }
+ 
+    public void start()
+    {
+        while ( true )
+        {
+            Console.Write( "온도를 입력해주세요.: " );
+            string temperature = Console.ReadLine();
+            if (temperature == "")
+                break;
+ 
+        *인터페이스*-->  logger.WriteLog( "현재 온도 : " + temperature );
+        }
+    }
+}
+
+[[[2]]]
+  *인터페이스*--> class FileLogger : ILogger
+{
+    private StreamWriter writer;
+ 
+    public FileLogger(string path)
+    {            ↑_[[[3]]]]__ ClimateMonitor monitor = new ClimateMonitor(new FileLogger("MyLog.txt"));
+       
+
+        writer = File.CreateText(path);
+        writer.AutoFlush = true;
+    }
+ 
+    public void WriteLog(string message)
+    {
+        writer.WriteLine("{0} {1}", DateTime.Now.ToShortTimeString(), message);
+    }
+}
+
+[[[3]]]
+ClimateMonitor monitor = new ClimateMonitor(new FileLogger("MyLog.txt"));
+ ↑ [[[[1]]]]                                                            ↑[[[2]]]]
+monitor.start();
+
+-----------------------------------------------------------------------------------------------------------
+인터페이스에 선언되어 있는 메소드를 구현하기만 한다면 해당 인터페이스를 
+   지원하는 코드에는 그 인터페이스의 모든 파생 클래스를 사용할 수 있음
+
+C#은 인터페이스의 다중상속은 지원한다.
+인터페이스는 내용이 아닌 외형을 물려주기 때문에 죽음의 다이아 몬드 문제가 발생하지 않음
+
+앞 페이지에서 선언한 ILogger 인터페이스를 상속받는 클래스는 WriteLog() 메소드를 구현할 때 
+로그를 파일에 기록하도록 할 수도 있고 네트워크 너머로 보내도록 할 수도 있음.
+
+
+* 인터페이스를 상속할 수 있는 것은 클래스 뿐만이 아님. 
+* 구조체도 인터페이스 상속 가능하며
+* 인터페이스도 인터페이스를 상속할 수 있음.
+* 대체로 다음과 같은 경우에 인터페이스의 인터페이스 상속 이용
+	상속하려는 인터페이스가 소스 코드가 아닌 어셈블리로만 제공되는 경우
+	상속하려는 인터페이스의 소스 코드를 갖고 있어도 이미 인터페이스를 상속하는 클래스들이 존재하는 경우
+
+[[인터페이스가 인터페이스를 상속]]
+
+interface ILogger
+{
+    void WriteLog(string message);
+}
+
+===============================추상 클래스=============================
+추상클래스는 인터페이스와는 달리 "구현"을 가질 수 있음 
+
+그러나 클래스와는 다르게 인스턴스(메모리 할당)를 가질 수 없음---> 메모리 할당을 받을 수 없다.
+
+추상 클래스는 클래스와는 달리 추상 메소드도 가질 수 있다
+
+[[[추상 클래스 선언 형식]]]
+abstract class 클래스이름
+{
+    // 클래스와 동일하게 구현
+}
+
+interface IFormattableLogger : ILogger
+{
+    void WriteLog(string format, params Object[] args); 
+}
+
+
+추상 메소드는 구현을 갖지 않으며, 파생 클래스에서만 해당 메소드를 구현할 수 있음
+
+
+[[추상 클래스 선언  예]]
+
+abstract class AbstractBase
+{
+    public abstract void SomeMethod();
+}
+
+class Derived : AbstractBase
+{
+    public override void SomeMethod()
+    {
+        // Something
+    }
+}
+
