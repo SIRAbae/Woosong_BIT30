@@ -1,0 +1,10 @@
+D:\C#\0925계좌과업\0925계좌과업\obj\Debug\netcoreapp2.1\0925계좌과업.csprojAssemblyReference.cache
+D:\C#\0925계좌과업\0925계좌과업\obj\Debug\netcoreapp2.1\0925계좌과업.AssemblyInfoInputs.cache
+D:\C#\0925계좌과업\0925계좌과업\obj\Debug\netcoreapp2.1\0925계좌과업.AssemblyInfo.cs
+D:\C#\0925계좌과업\0925계좌과업\bin\Debug\netcoreapp2.1\0925계좌과업.deps.json
+D:\C#\0925계좌과업\0925계좌과업\bin\Debug\netcoreapp2.1\0925계좌과업.runtimeconfig.json
+D:\C#\0925계좌과업\0925계좌과업\bin\Debug\netcoreapp2.1\0925계좌과업.runtimeconfig.dev.json
+D:\C#\0925계좌과업\0925계좌과업\bin\Debug\netcoreapp2.1\0925계좌과업.dll
+D:\C#\0925계좌과업\0925계좌과업\bin\Debug\netcoreapp2.1\0925계좌과업.pdb
+D:\C#\0925계좌과업\0925계좌과업\obj\Debug\netcoreapp2.1\0925계좌과업.dll
+D:\C#\0925계좌과업\0925계좌과업\obj\Debug\netcoreapp2.1\0925계좌과업.pdb

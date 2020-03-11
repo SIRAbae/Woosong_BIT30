@@ -1,0 +1,18 @@
+C:\Users\kimheeji\Desktop\비트 고급\06_C#\0412_계좌실습\0412_계좌실습\bin\x86\Debug\0412_계좌실습.exe.config
+C:\Users\kimheeji\Desktop\비트 고급\06_C#\0412_계좌실습\0412_계좌실습\bin\x86\Debug\0412_계좌실습.exe
+C:\Users\kimheeji\Desktop\비트 고급\06_C#\0412_계좌실습\0412_계좌실습\bin\x86\Debug\0412_계좌실습.pdb
+C:\Users\kimheeji\Desktop\비트 고급\06_C#\0412_계좌실습\0412_계좌실습\obj\x86\Debug\0412_계좌실습.csprojResolveAssemblyReference.cache
+C:\Users\kimheeji\Desktop\비트 고급\06_C#\0412_계좌실습\0412_계좌실습\obj\x86\Debug\0412_계좌실습.exe
+C:\Users\kimheeji\Desktop\비트 고급\06_C#\0412_계좌실습\0412_계좌실습\obj\x86\Debug\0412_계좌실습.pdb
+D:\비트고급\06_C#\0412_계좌실습\0412_계좌실습\bin\x86\Debug\0412_계좌실습.exe.config
+D:\비트고급\06_C#\0412_계좌실습\0412_계좌실습\obj\x86\Debug\0412_계좌실습.exe
+D:\비트고급\06_C#\0412_계좌실습\0412_계좌실습\obj\x86\Debug\0412_계좌실습.pdb
+D:\비트고급\06_C#\0412_계좌실습\0412_계좌실습\bin\x86\Debug\0412_계좌실습.exe
+D:\비트고급\06_C#\0412_계좌실습\0412_계좌실습\bin\x86\Debug\0412_계좌실습.pdb
+D:\비트고급\06_C#\0412_계좌실습\0412_계좌실습\obj\x86\Debug\0412_계좌실습.csprojResolveAssemblyReference.cache
+D:\C#\비트에내려오는계좌사전기능\0412_계좌실습\bin\x86\Debug\0412_계좌실습.exe.config
+D:\C#\비트에내려오는계좌사전기능\0412_계좌실습\bin\x86\Debug\0412_계좌실습.exe
+D:\C#\비트에내려오는계좌사전기능\0412_계좌실습\bin\x86\Debug\0412_계좌실습.pdb
+D:\C#\비트에내려오는계좌사전기능\0412_계좌실습\obj\x86\Debug\0412_계좌실습.csprojAssemblyReference.cache
+D:\C#\비트에내려오는계좌사전기능\0412_계좌실습\obj\x86\Debug\0412_계좌실습.exe
+D:\C#\비트에내려오는계좌사전기능\0412_계좌실습\obj\x86\Debug\0412_계좌실습.pdb

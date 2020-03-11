@@ -1,0 +1,13 @@
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\bin\Debug\0927_drinkbar.exe.config
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\bin\Debug\0927_drinkbar.exe
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\bin\Debug\0927_drinkbar.pdb
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.exe
+C:\Users\USER\Desktop\비트고급석궈니\석궈니의 C#공부\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.pdb
+D:\C#\0927자판기\1조\0927_drinkbar\0927_drinkbar\bin\Debug\0927_drinkbar.exe.config
+D:\C#\0927자판기\1조\0927_drinkbar\0927_drinkbar\bin\Debug\0927_drinkbar.exe
+D:\C#\0927자판기\1조\0927_drinkbar\0927_drinkbar\bin\Debug\0927_drinkbar.pdb
+D:\C#\0927자판기\1조\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.csprojAssemblyReference.cache
+D:\C#\0927자판기\1조\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.exe
+D:\C#\0927자판기\1조\0927_drinkbar\0927_drinkbar\obj\Debug\0927_drinkbar.pdb

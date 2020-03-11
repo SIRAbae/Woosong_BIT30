@@ -1,0 +1,13 @@
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\obj\Debug\0927_실습.csprojAssemblyReference.cache
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\obj\Debug\0927_실습.csproj.CoreCompileInputs.cache
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\bin\Debug\0927_실습.exe.config
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\bin\Debug\0927_실습.exe
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\bin\Debug\0927_실습.pdb
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\obj\Debug\0927_실습.exe
+D:\김경훈 비트고급\C# 닷넷\0927_실습\0927_실습\obj\Debug\0927_실습.pdb
+D:\C#\0927자판기\3조\0927_실습 (2)\0927_실습\bin\Debug\0927_실습.exe.config
+D:\C#\0927자판기\3조\0927_실습 (2)\0927_실습\bin\Debug\0927_실습.exe
+D:\C#\0927자판기\3조\0927_실습 (2)\0927_실습\bin\Debug\0927_실습.pdb
+D:\C#\0927자판기\3조\0927_실습 (2)\0927_실습\obj\Debug\0927_실습.csprojAssemblyReference.cache
+D:\C#\0927자판기\3조\0927_실습 (2)\0927_실습\obj\Debug\0927_실습.exe
+D:\C#\0927자판기\3조\0927_실습 (2)\0927_실습\obj\Debug\0927_실습.pdb

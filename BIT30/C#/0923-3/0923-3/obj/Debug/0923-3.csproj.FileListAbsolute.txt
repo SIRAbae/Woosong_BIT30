@@ -1,0 +1,7 @@
+D:\C#\0923-3\0923-3\obj\Debug\0923-3.csprojAssemblyReference.cache
+D:\C#\0923-3\0923-3\obj\Debug\0923-3.csproj.CoreCompileInputs.cache
+D:\C#\0923-3\0923-3\bin\Debug\0923-3.exe.config
+D:\C#\0923-3\0923-3\bin\Debug\0923-3.exe
+D:\C#\0923-3\0923-3\bin\Debug\0923-3.pdb
+D:\C#\0923-3\0923-3\obj\Debug\0923-3.exe
+D:\C#\0923-3\0923-3\obj\Debug\0923-3.pdb

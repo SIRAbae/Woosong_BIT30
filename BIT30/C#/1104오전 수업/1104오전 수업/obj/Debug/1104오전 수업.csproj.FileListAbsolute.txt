@@ -1,0 +1,6 @@
+D:\WPF\1104오전 수업\1104오전 수업\bin\Debug\1104오전 수업.exe.config
+D:\WPF\1104오전 수업\1104오전 수업\bin\Debug\1104오전 수업.exe
+D:\WPF\1104오전 수업\1104오전 수업\bin\Debug\1104오전 수업.pdb
+D:\WPF\1104오전 수업\1104오전 수업\obj\Debug\1104오전 수업.csprojAssemblyReference.cache
+D:\WPF\1104오전 수업\1104오전 수업\obj\Debug\1104오전 수업.exe
+D:\WPF\1104오전 수업\1104오전 수업\obj\Debug\1104오전 수업.pdb

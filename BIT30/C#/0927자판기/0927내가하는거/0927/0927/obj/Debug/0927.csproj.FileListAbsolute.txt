@@ -1,0 +1,5 @@
+D:\고급30기\05_C#\sample\0927\0927\bin\Debug\0927.exe.config
+D:\고급30기\05_C#\sample\0927\0927\bin\Debug\0927.exe
+D:\고급30기\05_C#\sample\0927\0927\bin\Debug\0927.pdb
+D:\고급30기\05_C#\sample\0927\0927\obj\Debug\0927.exe
+D:\고급30기\05_C#\sample\0927\0927\obj\Debug\0927.pdb

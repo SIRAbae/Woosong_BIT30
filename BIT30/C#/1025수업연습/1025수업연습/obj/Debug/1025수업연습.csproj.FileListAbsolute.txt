@@ -1,0 +1,6 @@
+D:\C#\1025수업연습\1025수업연습\bin\Debug\1025수업연습.exe.config
+D:\C#\1025수업연습\1025수업연습\bin\Debug\1025수업연습.exe
+D:\C#\1025수업연습\1025수업연습\bin\Debug\1025수업연습.pdb
+D:\C#\1025수업연습\1025수업연습\obj\Debug\1025수업연습.csprojAssemblyReference.cache
+D:\C#\1025수업연습\1025수업연습\obj\Debug\1025수업연습.exe
+D:\C#\1025수업연습\1025수업연습\obj\Debug\1025수업연습.pdb

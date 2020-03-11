@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="15ed33d7-33b8-40d1-8ee9-afeea8324b75" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.34:8888/PictureService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PictureService.disco" MetadataType="Disco" ID="0f7c124a-dea1-4da8-94d5-b3a1473fbaaa" SourceId="1" SourceUrl="http://192.168.0.34:8888/PictureService?disco" />
+    <MetadataFile FileName="PictureService.xsd" MetadataType="Schema" ID="323cc692-c30b-4a5e-bd8d-333a557ee7bb" SourceId="1" SourceUrl="http://192.168.0.34:8888/PictureService?xsd=xsd2" />
+    <MetadataFile FileName="PictureService1.xsd" MetadataType="Schema" ID="bf2c3f5a-568f-4f5f-bcdc-53082d0f0709" SourceId="1" SourceUrl="http://192.168.0.34:8888/PictureService?xsd=xsd1" />
+    <MetadataFile FileName="PictureService.wsdl" MetadataType="Wsdl" ID="16755859-eca3-447c-87ed-be3ec872c9a4" SourceId="1" SourceUrl="http://192.168.0.34:8888/PictureService?wsdl" />
+    <MetadataFile FileName="PictureService2.xsd" MetadataType="Schema" ID="929b6fba-de6f-4c5e-8307-e9b17addfb90" SourceId="1" SourceUrl="http://192.168.0.34:8888/PictureService?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

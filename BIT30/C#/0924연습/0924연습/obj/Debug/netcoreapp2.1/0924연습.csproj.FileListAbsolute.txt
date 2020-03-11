@@ -1,0 +1,11 @@
+C:\Users\USER\source\repos\0924연습\0924연습\obj\Debug\netcoreapp2.1\0924연습.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\0924연습\0924연습\obj\Debug\netcoreapp2.1\0924연습.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\0924연습\0924연습\obj\Debug\netcoreapp2.1\0924연습.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\0924연습\0924연습\obj\Debug\netcoreapp2.1\0924연습.AssemblyInfo.cs
+C:\Users\USER\source\repos\0924연습\0924연습\bin\Debug\netcoreapp2.1\0924연습.deps.json
+C:\Users\USER\source\repos\0924연습\0924연습\bin\Debug\netcoreapp2.1\0924연습.runtimeconfig.json
+C:\Users\USER\source\repos\0924연습\0924연습\bin\Debug\netcoreapp2.1\0924연습.runtimeconfig.dev.json
+C:\Users\USER\source\repos\0924연습\0924연습\bin\Debug\netcoreapp2.1\0924연습.dll
+C:\Users\USER\source\repos\0924연습\0924연습\bin\Debug\netcoreapp2.1\0924연습.pdb
+C:\Users\USER\source\repos\0924연습\0924연습\obj\Debug\netcoreapp2.1\0924연습.dll
+C:\Users\USER\source\repos\0924연습\0924연습\obj\Debug\netcoreapp2.1\0924연습.pdb

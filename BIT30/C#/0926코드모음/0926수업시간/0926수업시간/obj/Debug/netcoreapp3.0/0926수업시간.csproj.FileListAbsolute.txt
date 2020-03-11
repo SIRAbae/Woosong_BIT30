@@ -1,0 +1,14 @@
+D:\C#\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.csprojAssemblyReference.cache
+D:\C#\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.AssemblyInfoInputs.cache
+D:\C#\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.AssemblyInfo.cs
+D:\C#\0926코드모음\0926수업시간\0926수업시간\bin\Debug\netcoreapp3.0\0926수업시간.exe
+D:\C#\0926코드모음\0926수업시간\0926수업시간\bin\Debug\netcoreapp3.0\0926수업시간.deps.json
+D:\C#\0926코드모음\0926수업시간\0926수업시간\bin\Debug\netcoreapp3.0\0926수업시간.runtimeconfig.json
+D:\C#\0926코드모음\0926수업시간\0926수업시간\bin\Debug\netcoreapp3.0\0926수업시간.runtimeconfig.dev.json
+D:\C#\0926코드모음\0926수업시간\0926수업시간\bin\Debug\netcoreapp3.0\0926수업시간.dll
+D:\C#\0926코드모음\0926수업시간\0926수업시간\bin\Debug\netcoreapp3.0\0926수업시간.pdb
+D:\C#\0926코드모음\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.csprojAssemblyReference.cache
+D:\C#\0926코드모음\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.AssemblyInfoInputs.cache
+D:\C#\0926코드모음\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.AssemblyInfo.cs
+D:\C#\0926코드모음\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.dll
+D:\C#\0926코드모음\0926수업시간\0926수업시간\obj\Debug\netcoreapp3.0\0926수업시간.pdb

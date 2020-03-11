@@ -1,0 +1,10 @@
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\bin\Debug\1104Winfrom클라이언트.exe.config
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\bin\Debug\1104Winfrom클라이언트.exe
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\bin\Debug\1104Winfrom클라이언트.pdb
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\1104Winfrom클라이언트.csprojAssemblyReference.cache
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\_1104Winfrom클라이언트.Form1.resources
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\_1104Winfrom클라이언트.PicListForm.resources
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\_1104Winfrom클라이언트.Properties.Resources.resources
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\1104Winfrom클라이언트.csproj.GenerateResource.cache
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\1104Winfrom클라이언트.exe
+D:\WCF\1104Winfrom클라이언트\1104Winfrom클라이언트\obj\Debug\1104Winfrom클라이언트.pdb

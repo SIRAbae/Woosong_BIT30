@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0927_drinkbar", "0927_drinkbar\0927_drinkbar.csproj", "{D85AD8A8-B3B8-4473-A35A-72C2EE8F3E83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D85AD8A8-B3B8-4473-A35A-72C2EE8F3E83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D85AD8A8-B3B8-4473-A35A-72C2EE8F3E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D85AD8A8-B3B8-4473-A35A-72C2EE8F3E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D85AD8A8-B3B8-4473-A35A-72C2EE8F3E83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C54F7780-BFA3-4945-9D37-6CE3A6F5A21B}
+	EndGlobalSection
+EndGlobal

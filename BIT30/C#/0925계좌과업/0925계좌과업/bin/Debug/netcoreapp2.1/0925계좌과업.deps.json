@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "0925계좌과업/1.0.0": {
+        "runtime": {
+          "0925계좌과업.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "0925계좌과업/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

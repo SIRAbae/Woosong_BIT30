@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="_1104Winfrom클라이언트.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="_1104Winfrom클라이언트_PictureService_PictureService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.0.34:8888/PictureService</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

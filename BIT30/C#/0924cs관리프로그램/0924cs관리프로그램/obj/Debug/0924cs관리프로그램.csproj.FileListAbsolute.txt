@@ -1,0 +1,7 @@
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\bin\Debug\0924cs관리프로그램.exe.config
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\bin\Debug\0924cs관리프로그램.exe
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\bin\Debug\0924cs관리프로그램.pdb
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\obj\Debug\0924cs관리프로그램.csprojAssemblyReference.cache
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\obj\Debug\0924cs관리프로그램.csproj.CoreCompileInputs.cache
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\obj\Debug\0924cs관리프로그램.exe
+C:\Users\Moon\source\repos\0924cs관리프로그램\0924cs관리프로그램\obj\Debug\0924cs관리프로그램.pdb

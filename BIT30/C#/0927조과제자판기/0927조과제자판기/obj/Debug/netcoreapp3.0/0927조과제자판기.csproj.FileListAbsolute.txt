@@ -1,0 +1,11 @@
+D:\C#\0927조과제자판기\0927조과제자판기\obj\Debug\netcoreapp3.0\0927조과제자판기.csprojAssemblyReference.cache
+D:\C#\0927조과제자판기\0927조과제자판기\obj\Debug\netcoreapp3.0\0927조과제자판기.AssemblyInfoInputs.cache
+D:\C#\0927조과제자판기\0927조과제자판기\obj\Debug\netcoreapp3.0\0927조과제자판기.AssemblyInfo.cs
+D:\C#\0927조과제자판기\0927조과제자판기\bin\Debug\netcoreapp3.0\0927조과제자판기.exe
+D:\C#\0927조과제자판기\0927조과제자판기\bin\Debug\netcoreapp3.0\0927조과제자판기.deps.json
+D:\C#\0927조과제자판기\0927조과제자판기\bin\Debug\netcoreapp3.0\0927조과제자판기.runtimeconfig.json
+D:\C#\0927조과제자판기\0927조과제자판기\bin\Debug\netcoreapp3.0\0927조과제자판기.runtimeconfig.dev.json
+D:\C#\0927조과제자판기\0927조과제자판기\bin\Debug\netcoreapp3.0\0927조과제자판기.dll
+D:\C#\0927조과제자판기\0927조과제자판기\bin\Debug\netcoreapp3.0\0927조과제자판기.pdb
+D:\C#\0927조과제자판기\0927조과제자판기\obj\Debug\netcoreapp3.0\0927조과제자판기.dll
+D:\C#\0927조과제자판기\0927조과제자판기\obj\Debug\netcoreapp3.0\0927조과제자판기.pdb

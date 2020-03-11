@@ -1,0 +1,12 @@
+D:\고급30기\05_C#\sample\0924관리프로그램\0924관리프로그램\bin\Debug\0924관리프로그램.exe.config
+D:\고급30기\05_C#\sample\0924관리프로그램\0924관리프로그램\bin\Debug\0924관리프로그램.exe
+D:\고급30기\05_C#\sample\0924관리프로그램\0924관리프로그램\bin\Debug\0924관리프로그램.pdb
+D:\고급30기\05_C#\sample\0924관리프로그램\0924관리프로그램\obj\Debug\0924관리프로그램.exe
+D:\고급30기\05_C#\sample\0924관리프로그램\0924관리프로그램\obj\Debug\0924관리프로그램.pdb
+D:\C#\0924관리프로그램\0924관리프로그램\bin\Debug\0924관리프로그램.exe.config
+D:\C#\0924관리프로그램\0924관리프로그램\bin\Debug\0924관리프로그램.exe
+D:\C#\0924관리프로그램\0924관리프로그램\bin\Debug\0924관리프로그램.pdb
+D:\C#\0924관리프로그램\0924관리프로그램\obj\Debug\0924관리프로그램.csprojAssemblyReference.cache
+D:\C#\0924관리프로그램\0924관리프로그램\obj\Debug\0924관리프로그램.csproj.CoreCompileInputs.cache
+D:\C#\0924관리프로그램\0924관리프로그램\obj\Debug\0924관리프로그램.exe
+D:\C#\0924관리프로그램\0924관리프로그램\obj\Debug\0924관리프로그램.pdb

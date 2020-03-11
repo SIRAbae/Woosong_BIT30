@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "0927조과제자판기/1.0.0": {
+        "runtime": {
+          "0927조과제자판기.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "0927조과제자판기/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
