@@ -1,0 +1,14 @@
+D:\WPF\1115중앙대\1115중앙대\bin\Debug\1115중앙대.exe.config
+D:\WPF\1115중앙대\1115중앙대\bin\Debug\1115중앙대.exe
+D:\WPF\1115중앙대\1115중앙대\bin\Debug\1115중앙대.pdb
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대.csprojAssemblyReference.cache
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\MainWindow.g.cs
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\App.g.cs
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대_MarkupCompile.cache
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대_MarkupCompile.lref
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\MainWindow.baml
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대.g.resources
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\_1115중앙대.Properties.Resources.resources
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대.csproj.GenerateResource.cache
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대.exe
+D:\WPF\1115중앙대\1115중앙대\obj\Debug\1115중앙대.pdb

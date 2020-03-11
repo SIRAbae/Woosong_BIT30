@@ -1,0 +1,89 @@
+﻿<Window x:Class="_1115중앙대.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1115중앙대"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1240" WindowStyle="None" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="#FFD10000" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Image Source="C:\Users\USER\Desktop\WpfApp1\캡처1.png"/>
+            </Grid>
+            
+        </Grid>
+        
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Image Source="C:\Users\USER\Desktop\WpfApp1\3.PNG"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1"  >
+            <ListBox Name="list1" Background="#FF830202">
+                <ListBoxItem >
+                    <Button Name="button1" Click="Button_Click" Margin="30,20,0,20" Width="130" Height="30">
+                        <TextBlock Text="누르고 싶지??"/>
+                    </Button>
+                </ListBoxItem>
+                <ListBoxItem >
+                    <Button Name="button2" Click="button2_Click" Margin="30,20,0,20" Width="130" Height="30">
+                        <TextBlock Text="위에거 안눌러??"/>
+                    </Button>
+                </ListBoxItem>
+                <ListBoxItem >
+                    <Button Name="button3" Click="button3_Click" Margin="30,20,0,20" Width="130" Height="30">
+                        <TextBlock Text="묻고 더블로 가!!!"/>
+                    </Button>
+                </ListBoxItem>
+            </ListBox>
+        </Grid>
+
+
+        <Grid Grid.Row="1" Grid.Column="0" Background="#FFF9E8D9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+        </Grid>
+
+    </Grid>
+
+
+</Window>
